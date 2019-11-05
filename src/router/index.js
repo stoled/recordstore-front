@@ -3,7 +3,7 @@ import Router from 'vue-router'
 import Signin from '@/components/Signin'
 import Signup from '@/components/Signup'
 import Artists from '@/components/Artists'
-import Records from '@/components/Signup'
+import Records from '@/components/Records'
 
 
 Vue.use(Router)

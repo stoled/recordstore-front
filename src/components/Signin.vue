@@ -7,7 +7,7 @@
 
         <div>
           <label for="email">E-mail Address</label>
-          <input type="email" v-model="email" id="email" placeholder="andy@web-crunch.com">
+          <input type="email" v-model="email" id="email" placeholder="test@mail.com">
         </div>
         <div>
           <label for="password">Password</label>
@@ -51,7 +51,7 @@ export default {
       localStorage.csrf = response.data.csrf
       localStorage.signedIn = true
       this.error = ''
-      this.$router.replace('/records')
+      this.$router.replace('/artists')
     },
     signinFailed (error) {
       this.error = (error.response && error.response.data && error.response.data.error) || ''
@@ -60,7 +60,7 @@ export default {
     },
     checkSignedIn () {
       if (localStorage.signedIn) {
-        this.$router.replace('/records')
+        this.$router.replace('/artists')
       }
     }
   }

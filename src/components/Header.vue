@@ -1,11 +1,11 @@
 <template>
   <header>
-    <b-nav align="end">
-      <b-nav-item to="/" v-if="!signedIn()">Sign in</b-nav-item>
-      <b-nav-item to="/signup" v-if="!signedIn()">Sign Up</b-nav-item>
-      <b-nav-item to="/records" v-if="signedIn()">Records</b-nav-item>
-      <b-nav-item to="/artists" v-if="signedIn()">Artists</b-nav-item>
-      <a href="#" @click.prevent="signOut" v-if="signedIn()">Sign out</a>
+    <b-nav justified>
+      <b-nav-item to="/records">Records</b-nav-item>
+      <b-nav-item to="/artists">Artists</b-nav-item>
+      <b-nav-item to="/">Sign in</b-nav-item>
+      <b-nav-item to="/signup">Sign Up</b-nav-item>
+      <b-nav-item to="/" @click.prevent="signOut">Sign out</b-nav-item>
     </b-nav>
   </header>
 </template>

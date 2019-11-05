@@ -14,9 +14,11 @@
     <hr>
 
     <ul>
-      <li>
+      <li v-for="artist in artists" :key="artist.id" :artist="artist">
 
         <div>
+          <p>{{ artist.name }}</p>
+
           <button @click.prevent="editArtist(artist)">Edit</button>
 
           <button @click.prevent="removeArtist(artist)">Delete</button>
