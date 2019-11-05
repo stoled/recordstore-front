@@ -7,11 +7,12 @@
       <div>
         <router-link to="/" v-if="!signedIn()">Sign in</router-link>
         <router-link to="/signup" v-if="!signedIn()">Sign Up</router-link>
-        <router-link to="/records" v-if="signedIn()">Records</router-link>
+        <!-- <router-link to="/records" v-if="signedIn()">Records</router-link>
         <router-link to="/artists" v-if="signedIn()">Artists</router-link>
-        <a href="#" @click.prevent="signOut" v-if="signedIn()">Sign out</a>
+        <a href="#" @click.prevent="signOut" v-if="signedIn()">Sign out</a> -->
       </div>
     </div>
+    <hr>
   </header>
 </template>
 
